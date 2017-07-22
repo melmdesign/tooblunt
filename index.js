@@ -3,7 +3,7 @@
 		var settings = $.extend({
 			horizontal: true,
 			vertical: true,
-			speed: 50, // In pixels per second
+			speed: 100, // In pixels per second
 			container: $(this).parent(),
 			bumpEdge: function () {}
 		}, options);
@@ -21,7 +21,7 @@
 
 			move = {
 				right: function () {
-					$el.animate({left: (containerWidth - elWidth)}, {duration: ((containerWidth/settings.speed) * 800), queue: false, easing: "linear", complete: function () {
+					$el.animate({left: (containerWidth - elWidth)}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
 						settings.bumpEdge();
 						move.left();
 					}});
