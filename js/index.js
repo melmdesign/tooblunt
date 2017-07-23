@@ -7,7 +7,7 @@
 			container: $(this).parent(),
 			bumpEdge: function () {}
 		}, options);
-		
+
 		return this.each(function () {
 			var containerWidth, containerHeight, elWidth, elHeight, move, getSizes,
 				$el = $(this);
@@ -66,7 +66,7 @@
 $(document).ready( function() {
 
 	$('.marquee').marqueeify({
-		speed: 300,
+		speed: 200,
 		bumpEdge: function () {
 			var newColor = "hsl(" + Math.floor(Math.random()*360) + ", 100%, 50%)";
 			$('.marquee .logo').css('fill', newColor);
