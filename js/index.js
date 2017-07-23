@@ -7,7 +7,7 @@
 			container: $(this).parent(),
 			bumpEdge: function () {}
 		}, options);
-
+		
 		return this.each(function () {
 			var containerWidth, containerHeight, elWidth, elHeight, move, getSizes,
 				$el = $(this);
